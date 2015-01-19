@@ -1,6 +1,6 @@
 # Material Design Off Canvas Menu
 
-This project was build using front end technologies, HTML5, CSS3, and JavaScript, to generate an off-canvas menu based on material design principles. It contains three main features:
+This project was build using front end technologies, HTML5, CSS3, and JavaScript, to generate an off-canvas menu based on material design principles. It contains four main features:
 
 1. Animated toggle button
 2. Animated off canvas menu
