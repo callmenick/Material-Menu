@@ -1,0 +1,45 @@
+/* =============================================================================
+  FUSION ADS
+============================================================================= */
+
+#fusionads {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  padding: 12px;
+  background: rgba(255,255,255,0.95);
+  font-size: 12px;
+  line-height: 1.2;
+  box-shadow: -2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#fusionads .fusion-wrap {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 130px;
+}
+
+#fusionads a.fusion-text {
+  display: block;
+  color: $color--text-secondary;
+  text-decoration: none;
+}
+
+#fusionads a.fusion-img {
+  display: block;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 100px;
+  background-color: #fff;
+}
+
+#fusionads a.fusion-img img {
+  display: block;
+  margin: 0 0 12px 0;
+}
+
+#fusionads a.fusion-poweredby {
+  color: $color--accent;
+  text-decoration: none;
+}

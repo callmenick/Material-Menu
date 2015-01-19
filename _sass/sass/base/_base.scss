@@ -1,0 +1,47 @@
+/* =============================================================================
+  HTML & BODY
+============================================================================= */
+
+body {
+  color: $color--text-secondary;
+  background-color: #fff;
+  font-family: $font-family--primary;
+  font-size: $font-size--small;
+  font-weight: 300;
+  line-height: $line-height--medium;
+}
+
+body.mm-menu-open {
+  overflow: hidden;
+}
+
+/* =============================================================================
+  HEADINGS
+============================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 22px;
+  color: $color--text-primary;
+  line-height: $line-height--small;
+}
+
+h1 {
+  font-size: $font-size--large;
+}
+
+/* =============================================================================
+  TEXT
+============================================================================= */
+
+p {
+  margin-bottom: 22px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
