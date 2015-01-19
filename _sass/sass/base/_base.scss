@@ -34,6 +34,10 @@ h1 {
   font-size: $font-size--large;
 }
 
+h2 {
+  font-size: $font-size--medium;
+}
+
 /* =============================================================================
   TEXT
 ============================================================================= */
@@ -44,4 +48,9 @@ p {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+a {
+  color: $color--accent;
+  text-decoration: none;
 }
