@@ -25,6 +25,12 @@ module.exports = function(grunt) {
           'css/style.min.css': ['css/style.css']
         }
       }
+    },
+    watch: {
+      scripts: {
+        files: ['css/style.css'],
+        tasks: ['cssmin']
+      }
     }
   });
 
