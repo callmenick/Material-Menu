@@ -3,6 +3,7 @@
 ============================================================================= */
 
 #fusionads {
+  display: none;
   position: fixed;
   top: 12px;
   right: 12px;
@@ -42,4 +43,10 @@
 #fusionads a.fusion-poweredby {
   color: $color--accent;
   text-decoration: none;
+}
+
+@media all and ( min-width: 600px ) {
+  #fusionads {
+    display: block;
+  }
 }
