@@ -88,7 +88,7 @@ $menu-gradient-stop-2: $menu-gradient-stop-1 + $menu-toggle-layer-thickness;
   background-color: #fff;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-shadow: 0;
   transform: translateX(-100%);
   transition: transform 0.5s, box-shadow 0.5s;
