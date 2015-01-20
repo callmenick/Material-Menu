@@ -216,36 +216,33 @@
    *
    * Initialise the item transistions. Items transition into view as if they
    * are being pulled one by one, giving a neat effect. For this to take place,
-   * we need to add a transition delay to each item. Number of items dynamically
-   * calculated in the function.
+   * we need to add a necessary class to each item menu. The classes are
+   * named sequentially, and more can be added in the CSS.
    */
 
   Menu.prototype._initItemTransitions = function() {
     var scope = this;
-    var num = this.menuItems.length;
-    var transitionDelay = 0.1;
-    for ( var i = 0; i < num; i++ ) {
+    var len = this.menuItems.length;
+    for ( var i = 0; i < len; i++ ) {
+      var num = i+1;
       var menuItem = this.menuItems[i];
-      var delay = transitionDelay+"s";
-      this._itemTransitionHandler( menuItem, delay );
-      transitionDelay = transitionDelay + 0.1;
+      this._itemTransitionHandler( menuItem, num );
     }
   };
 
   /**
    * Menu `_itemTransitionHandler`
    *
-   * Handles the item transitions, appending the correct style onto each
-   * element.
+   * Handles the item transitions, appending the correct class onto each
+   * element. Classes follow an "item-n" conventin, where n is the number of
+   * the item in the list. See CSS, and add more in the CSS if you need.
    *
    * @param {HTMLElement} menuItem The menu item in question
-   * @param {Number} delay The transition delay value
+   * @param {Number} num The number to append to the class name
    */
 
-  Menu.prototype._itemTransitionHandler = function( menuItem, delay ) {
-    menuItem.style.webkitTransition = "opacity 0.5s " + delay + " ,transform 0.5s " + delay;
-    menuItem.style.MozTransition = "opacity 0.5s " + delay + " ,transform 0.5s " + delay;
-    menuItem.style.transition = "opacity 0.5s " + delay + " ,transform 0.5s " + delay;
+  Menu.prototype._itemTransitionHandler = function( menuItem, num ) {
+    menuItem.classList.add("item-"+num);
   };
 
   /**

@@ -144,6 +144,14 @@ $menu-gradient-stop-2: $menu-gradient-stop-1 + $menu-toggle-layer-thickness;
   transform: translateX(0);
 }
 
+$delay: 0.1;
+@for $i from 1 through 20 {
+  .mm-menu__item.item-#{$i} {
+    transition: opacity 0.5s #{$delay}s, transform 0.5s #{$delay}s;
+  }
+  $delay: $delay + 0.1;
+}
+
 .mm-menu__link {
   display: block;
   position: relative;
