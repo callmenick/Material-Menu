@@ -7,7 +7,7 @@ This project was build using front end technologies, HTML5, CSS3, and JavaScript
 3. Animated Menu Items
 4. Touch/click ripple effect
 
-[View the live demo here](http://callmenick.com/projects/material-off-canvas-menu/)
+[View the live demo here](http://callmenick.com/_development/material-menu/)
 
 ## 1 - Animated Toggle Button
 
@@ -55,4 +55,4 @@ http://callmenick.com
 
 ## Live Demo
 
-[View the live demo here](http://callmenick.com/projects/material-off-canvas-menu/).
+[View the live demo here](http://callmenick.com/_development/material-menu/).
